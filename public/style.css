@@ -20,13 +20,15 @@ body {
   justify-content: center;
 }
 
-#app > * {
+#app form {
   display: flex;
   flex-direction: column;
   margin: 0 30%;
 }
 
 #app > #result {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   align-items: center;
 }
