@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const {db, Question, Choice} = require('../server/db')
-const data = require('./questions.json')
+const data = require('../data/questions.json')
 
 const seed = async () => {
   await db.sync({force: true})
