@@ -1,10 +1,12 @@
 {
-  "name": "pairexercise.wizardforms",
+  "name": "wizardquiz",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack -w & nodemon --watch server -e js,html server/main.js",
+    "start": "npm run start-server & npm run build-watch",
+    "start-server": "nodemon --watch server -e js,html server/main.js",
+    "build-watch": "webpack -w",
     "seed": "node bin/seed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,13 +24,12 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
-    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "pg": "^7.4.1",
     "pg-hstore": "^2.3.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "sequelize": "^4.33.3",
-    "volleyball": "^1.4.1"
+    "volleyball": "^1.5.1"
   }
 }
